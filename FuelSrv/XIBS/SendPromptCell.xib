@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Segoe UI Bold.ttf">
+            <string>SegoeUI-Bold</string>
+        </array>
+        <array key="seguisb.ttf">
+            <string>SegoeUI-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SendPromptCell" rowHeight="400" id="KGk-i7-Jjw" customClass="SendPromptCell" customModule="FuelSrv" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="309" height="400"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="309" height="399.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xro-wA-yhU" userLabel="sendView">
+                        <rect key="frame" x="0.0" y="0.0" width="309" height="399.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LBy-m7-VYf">
+                                <rect key="frame" x="0.0" y="0.0" width="309" height="95"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="m1k-6O-0Ae">
+                                        <rect key="frame" x="16" y="12.5" width="70" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="16o-Yu-ojY"/>
+                                            <constraint firstAttribute="width" secondItem="m1k-6O-0Ae" secondAttribute="height" multiplier="1:1" id="plw-4x-8f6"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="35"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 lakehead Road waterloo" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bqo-Gx-FpC">
+                                        <rect key="frame" x="94" y="41" width="199" height="20"/>
+                                        <fontDescription key="fontDescription" name="SegoeUI-Semibold" family="Segoe UI" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kevin Smith" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qV1-rC-ZxC">
+                                        <rect key="frame" x="94" y="12.5" width="199" height="18"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.98431372549999996" green="0.33333333329999998" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="m1k-6O-0Ae" firstAttribute="centerY" secondItem="LBy-m7-VYf" secondAttribute="centerY" id="9X9-3C-smf"/>
+                                    <constraint firstItem="m1k-6O-0Ae" firstAttribute="leading" secondItem="LBy-m7-VYf" secondAttribute="leading" constant="16" id="Yvq-fp-MOm"/>
+                                    <constraint firstAttribute="trailing" secondItem="qV1-rC-ZxC" secondAttribute="trailing" constant="16" id="bhY-Gp-8uc"/>
+                                    <constraint firstItem="Bqo-Gx-FpC" firstAttribute="top" secondItem="qV1-rC-ZxC" secondAttribute="bottom" constant="10.5" id="jy1-iV-Obu"/>
+                                    <constraint firstItem="qV1-rC-ZxC" firstAttribute="leading" secondItem="m1k-6O-0Ae" secondAttribute="trailing" constant="8" id="lxM-kI-hbL"/>
+                                    <constraint firstItem="Bqo-Gx-FpC" firstAttribute="trailing" secondItem="qV1-rC-ZxC" secondAttribute="trailing" id="nti-4h-IYT"/>
+                                    <constraint firstItem="qV1-rC-ZxC" firstAttribute="top" secondItem="m1k-6O-0Ae" secondAttribute="top" id="sxm-mN-0aS"/>
+                                    <constraint firstItem="Bqo-Gx-FpC" firstAttribute="leading" secondItem="qV1-rC-ZxC" secondAttribute="leading" id="tdW-Lo-WuJ"/>
+                                    <constraint firstAttribute="height" constant="95" id="wSq-1t-pKO"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HFg-gP-wgm">
+                                <rect key="frame" x="16" y="103" width="277" height="20"/>
+                                <fontDescription key="fontDescription" name="SegoeUI-Semibold" family="Segoe UI" pointSize="15"/>
+                                <color key="textColor" red="0.55294117649999996" green="0.58823529409999997" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WxA-fR-d2S">
+                                <rect key="frame" x="16" y="131" width="277" height="22"/>
+                                <fontDescription key="fontDescription" name="SegoeUI-Semibold" family="Segoe UI" pointSize="13"/>
+                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="5"/>
+                                <state key="normal" title="Cannot find vehicle." image="Rounded Rectangle">
+                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <state key="selected" image="DriverCheck"/>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xzS-Li-Eu7">
+                                <rect key="frame" x="16" y="169" width="277" height="22"/>
+                                <fontDescription key="fontDescription" name="SegoeUI-Semibold" family="Segoe UI" pointSize="13"/>
+                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="5"/>
+                                <state key="normal" title="Gas cover is not unlatched." image="Rounded Rectangle">
+                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <state key="selected" image="DriverCheck"/>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rrM-a2-ei8">
+                                <rect key="frame" x="16" y="199" width="277" height="35"/>
+                                <fontDescription key="fontDescription" name="SegoeUI-Semibold" family="Segoe UI" pointSize="12"/>
+                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="5"/>
+                                <state key="normal" image="Rounded Rectangle">
+                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <state key="selected" image="DriverCheck"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cannot access fueling port properly or perform fuel safely." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w2R-CQ-VGc">
+                                <rect key="frame" x="46" y="199" width="247" height="35"/>
+                                <fontDescription key="fontDescription" name="SegoeUI-Semibold" family="Segoe UI" pointSize="13"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="if you're at all available,would you able to visit your vehicle or contact your operator at (519)787 5412 .Thak you!" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4cf-cs-zwL">
+                                <rect key="frame" x="16" y="250" width="277" height="52"/>
+                                <fontDescription key="fontDescription" name="SegoeUI-Semibold" family="Segoe UI" pointSize="13"/>
+                                <color key="textColor" red="0.55294117649999996" green="0.58823529409999997" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BlI-aP-w0o" customClass="RoundButton" customModule="FuelSrv" customModuleProvider="target">
+                                <rect key="frame" x="161" y="331.5" width="132" height="44"/>
+                                <color key="backgroundColor" red="0.1960784314" green="0.22352941179999999" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="BlI-aP-w0o" secondAttribute="height" multiplier="3:1" id="Ewc-63-EGl"/>
+                                    <constraint firstAttribute="height" constant="44" id="Qti-iN-3k2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SegoeUI-Bold" family="Segoe UI" pointSize="15"/>
+                                <state key="normal" title="SEND">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AUe-cN-PwF">
+                                <rect key="frame" x="16" y="310" width="113.5" height="17.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="You">
+                                        <attributes>
+                                            <color key="NSColor" red="0.55294117647058827" green="0.58823529411764708" blue="0.62352941176470589" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="13" name="SegoeUI-Semibold"/>
+                                            <font key="NSOriginalFont" size="15" name=".SFNSText"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="r ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.55294117647058827" green="0.58823529411764708" blue="0.62352941176470589" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="13" name="SegoeUI-Semibold"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="FuelSrv">
+                                        <attributes>
+                                            <color key="NSColor" red="0.55294117647058827" green="0.58823529411764708" blue="0.62352941176470589" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="13" name="SegoeUI-Bold"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" Team.">
+                                        <attributes>
+                                            <color key="NSColor" red="0.55294117647058827" green="0.58823529411764708" blue="0.62352941176470589" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="13" name="SegoeUI-Semibold"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <color key="highlightedColor" red="0.55294117649999996" green="0.58823529409999997" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="w2R-CQ-VGc" firstAttribute="leading" secondItem="rrM-a2-ei8" secondAttribute="leading" constant="30" id="0VD-r5-j1H"/>
+                            <constraint firstItem="LBy-m7-VYf" firstAttribute="top" secondItem="xro-wA-yhU" secondAttribute="top" id="0ol-ty-H8g"/>
+                            <constraint firstItem="HFg-gP-wgm" firstAttribute="top" secondItem="LBy-m7-VYf" secondAttribute="bottom" constant="8" id="57m-jh-zkO"/>
+                            <constraint firstItem="rrM-a2-ei8" firstAttribute="leading" secondItem="xzS-Li-Eu7" secondAttribute="leading" id="5Ik-HR-Sbq"/>
+                            <constraint firstItem="w2R-CQ-VGc" firstAttribute="bottom" secondItem="rrM-a2-ei8" secondAttribute="bottom" id="5je-5g-P34"/>
+                            <constraint firstItem="HFg-gP-wgm" firstAttribute="trailing" secondItem="Bqo-Gx-FpC" secondAttribute="trailing" id="74X-Yi-Kmt"/>
+                            <constraint firstItem="w2R-CQ-VGc" firstAttribute="trailing" secondItem="rrM-a2-ei8" secondAttribute="trailing" id="9hD-lK-AlK"/>
+                            <constraint firstItem="AUe-cN-PwF" firstAttribute="leading" secondItem="4cf-cs-zwL" secondAttribute="leading" id="9xw-V5-pJc"/>
+                            <constraint firstItem="WxA-fR-d2S" firstAttribute="trailing" secondItem="HFg-gP-wgm" secondAttribute="trailing" id="B9G-fJ-6H1"/>
+                            <constraint firstItem="4cf-cs-zwL" firstAttribute="leading" secondItem="rrM-a2-ei8" secondAttribute="leading" id="DE6-at-JpC"/>
+                            <constraint firstItem="WxA-fR-d2S" firstAttribute="leading" secondItem="HFg-gP-wgm" secondAttribute="leading" id="GuT-Vz-ekR"/>
+                            <constraint firstItem="rrM-a2-ei8" firstAttribute="trailing" secondItem="xzS-Li-Eu7" secondAttribute="trailing" id="HvV-G7-60N"/>
+                            <constraint firstItem="rrM-a2-ei8" firstAttribute="top" secondItem="xzS-Li-Eu7" secondAttribute="bottom" constant="8" id="Jed-Qu-NHO"/>
+                            <constraint firstItem="HFg-gP-wgm" firstAttribute="leading" secondItem="m1k-6O-0Ae" secondAttribute="leading" id="KmX-NK-SHJ"/>
+                            <constraint firstItem="xzS-Li-Eu7" firstAttribute="top" secondItem="WxA-fR-d2S" secondAttribute="bottom" constant="16" id="L1W-As-L3Q"/>
+                            <constraint firstAttribute="trailing" secondItem="BlI-aP-w0o" secondAttribute="trailing" constant="16" id="NDc-9Y-psg"/>
+                            <constraint firstItem="LBy-m7-VYf" firstAttribute="leading" secondItem="xro-wA-yhU" secondAttribute="leading" id="UG5-RK-jbX"/>
+                            <constraint firstItem="BlI-aP-w0o" firstAttribute="top" secondItem="AUe-cN-PwF" secondAttribute="bottom" constant="4" id="ZH2-R6-3Dt"/>
+                            <constraint firstItem="WxA-fR-d2S" firstAttribute="top" secondItem="HFg-gP-wgm" secondAttribute="bottom" constant="8" id="bbW-5e-kBX"/>
+                            <constraint firstItem="4cf-cs-zwL" firstAttribute="top" secondItem="rrM-a2-ei8" secondAttribute="bottom" constant="16" id="cxC-io-M5T"/>
+                            <constraint firstItem="w2R-CQ-VGc" firstAttribute="top" secondItem="rrM-a2-ei8" secondAttribute="top" id="hwc-Ey-79F"/>
+                            <constraint firstItem="AUe-cN-PwF" firstAttribute="top" secondItem="4cf-cs-zwL" secondAttribute="bottom" constant="8" id="kzt-kJ-Ifw"/>
+                            <constraint firstAttribute="trailing" secondItem="LBy-m7-VYf" secondAttribute="trailing" id="mnZ-Kg-3Bl"/>
+                            <constraint firstItem="xzS-Li-Eu7" firstAttribute="trailing" secondItem="WxA-fR-d2S" secondAttribute="trailing" id="qcA-KY-dSL"/>
+                            <constraint firstItem="xzS-Li-Eu7" firstAttribute="leading" secondItem="WxA-fR-d2S" secondAttribute="leading" id="rDR-ly-Ltk"/>
+                            <constraint firstItem="4cf-cs-zwL" firstAttribute="trailing" secondItem="rrM-a2-ei8" secondAttribute="trailing" id="u0G-ih-VZc"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="399.5" id="zRp-Mr-hTQ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="xro-wA-yhU" secondAttribute="bottom" id="IhV-Ov-9mE"/>
+                    <constraint firstItem="xro-wA-yhU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="LHW-gK-nfq"/>
+                    <constraint firstItem="xro-wA-yhU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="TRz-fG-1OB"/>
+                    <constraint firstAttribute="trailing" secondItem="xro-wA-yhU" secondAttribute="trailing" id="cIz-EO-EUM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="addressLbl" destination="Bqo-Gx-FpC" id="jVE-vl-Lgl"/>
+                <outlet property="cellTextLbl" destination="HFg-gP-wgm" id="JQG-w5-Dr3"/>
+                <outlet property="gasBtn" destination="xzS-Li-Eu7" id="cdN-Fp-j7O"/>
+                <outlet property="nameLbl" destination="qV1-rC-ZxC" id="1JU-j4-N7V"/>
+                <outlet property="profilePic" destination="m1k-6O-0Ae" id="uB7-e0-qn5"/>
+                <outlet property="safelyBtn" destination="rrM-a2-ei8" id="Lu9-gA-xIV"/>
+                <outlet property="sendBtn" destination="BlI-aP-w0o" id="apS-86-4M4"/>
+                <outlet property="vehicleBtn" destination="WxA-fR-d2S" id="LqZ-fZ-2RO"/>
+            </connections>
+            <point key="canvasLocation" x="0.80000000000000004" y="29.685157421289357"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="DriverCheck" width="22" height="22"/>
+        <image name="Rounded Rectangle" width="22" height="22"/>
+    </resources>
+</document>

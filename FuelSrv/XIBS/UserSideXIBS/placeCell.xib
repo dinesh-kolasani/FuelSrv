@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="placeCell" rowHeight="48" id="kvm-gY-ig2" customClass="placeCell" customModule="FuelSrv" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="48"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kvm-gY-ig2" id="vnR-e3-SuX">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="47.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ryg-xJ-SlW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="47.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location pin" translatesAutoresizingMaskIntoConstraints="NO" id="DiO-w4-bUJ">
+                                <rect key="frame" x="8" y="14" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="P0F-Qw-Cnz"/>
+                                    <constraint firstAttribute="height" constant="20" id="YKY-r6-ZUb"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QWJ-cm-IyN">
+                                <rect key="frame" x="36" y="10" width="268" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="h67-IH-bhS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7g4-ye-rqZ">
+                                <rect key="frame" x="36" y="25" width="268" height="12.5"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rul-eP-xkg">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="47.5"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="13"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="QWJ-cm-IyN" firstAttribute="leading" secondItem="DiO-w4-bUJ" secondAttribute="trailing" constant="8" id="0N8-oY-Pea"/>
+                            <constraint firstAttribute="trailing" secondItem="Rul-eP-xkg" secondAttribute="trailing" id="1aj-l5-NGU"/>
+                            <constraint firstItem="Rul-eP-xkg" firstAttribute="leading" secondItem="Ryg-xJ-SlW" secondAttribute="leading" id="5tp-BH-unA"/>
+                            <constraint firstItem="DiO-w4-bUJ" firstAttribute="leading" secondItem="Ryg-xJ-SlW" secondAttribute="leading" constant="8" id="71T-GN-1UK"/>
+                            <constraint firstItem="DiO-w4-bUJ" firstAttribute="centerY" secondItem="Ryg-xJ-SlW" secondAttribute="centerY" id="Ehm-GT-Eaa"/>
+                            <constraint firstItem="QWJ-cm-IyN" firstAttribute="top" secondItem="Ryg-xJ-SlW" secondAttribute="top" constant="10" id="KGd-gR-W8M"/>
+                            <constraint firstItem="Rul-eP-xkg" firstAttribute="top" secondItem="Ryg-xJ-SlW" secondAttribute="top" id="Njf-cy-tzt"/>
+                            <constraint firstItem="7g4-ye-rqZ" firstAttribute="leading" secondItem="QWJ-cm-IyN" secondAttribute="leading" id="UXE-IH-bNM"/>
+                            <constraint firstAttribute="bottom" secondItem="Rul-eP-xkg" secondAttribute="bottom" id="WAf-iF-dsb"/>
+                            <constraint firstAttribute="bottom" secondItem="7g4-ye-rqZ" secondAttribute="bottom" constant="10" id="bgK-pI-iH6"/>
+                            <constraint firstItem="7g4-ye-rqZ" firstAttribute="top" secondItem="QWJ-cm-IyN" secondAttribute="bottom" id="pWd-gN-bYK"/>
+                            <constraint firstAttribute="trailing" secondItem="QWJ-cm-IyN" secondAttribute="trailing" constant="16" id="vGq-uR-7JM"/>
+                            <constraint firstItem="7g4-ye-rqZ" firstAttribute="trailing" secondItem="QWJ-cm-IyN" secondAttribute="trailing" id="zTW-8I-6ih"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Ryg-xJ-SlW" secondAttribute="bottom" id="Lcp-RX-ffN"/>
+                    <constraint firstItem="Ryg-xJ-SlW" firstAttribute="leading" secondItem="vnR-e3-SuX" secondAttribute="leading" id="VG0-nc-rib"/>
+                    <constraint firstAttribute="trailing" secondItem="Ryg-xJ-SlW" secondAttribute="trailing" id="lTF-s8-fcP"/>
+                    <constraint firstItem="Ryg-xJ-SlW" firstAttribute="top" secondItem="vnR-e3-SuX" secondAttribute="top" id="q5L-4J-b7W"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="ZDv-TP-4MR"/>
+            <connections>
+                <outlet property="addressLbl" destination="7g4-ye-rqZ" id="qOq-nH-Nvs"/>
+                <outlet property="btn" destination="Rul-eP-xkg" id="INl-ag-duw"/>
+                <outlet property="placeImg" destination="DiO-w4-bUJ" id="13e-57-HOJ"/>
+                <outlet property="subAddressLbl" destination="QWJ-cm-IyN" id="aap-pt-41h"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="155.62218890554723"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="location pin" width="22" height="22"/>
+    </resources>
+</document>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="seguisb.ttf">
+            <string>SegoeUI-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="MembershipVcCell" rowHeight="149" id="KGk-i7-Jjw" customClass="MembershipVcCell" customModule="FuelSrv" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="314" height="149"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="314" height="148.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b3M-2O-B2P" userLabel="Monthly View" customClass="RoundedView" customModule="FuelSrv" customModuleProvider="target">
+                        <rect key="frame" x="16" y="0.0" width="282" height="148.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MemType" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aiq-Fb-pN8">
+                                <rect key="frame" x="8" y="8" width="85.5" height="25.5"/>
+                                <fontDescription key="fontDescription" name="SegoeUI-Semibold" family="Segoe UI" pointSize="19"/>
+                                <color key="textColor" red="0.1960784314" green="0.22352941179999999" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MemPrice" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4pg-Mz-ywy">
+                                <rect key="frame" x="187" y="8" width="87" height="25.5"/>
+                                <fontDescription key="fontDescription" name="SegoeUI-Semibold" family="Segoe UI" pointSize="19"/>
+                                <color key="textColor" red="0.08235294118" green="0.65098039220000004" blue="0.3411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KdS-G2-O9b" customClass="RoundButton" customModule="FuelSrv" customModuleProvider="target">
+                                <rect key="frame" x="8" y="86" width="266" height="44"/>
+                                <color key="backgroundColor" red="0.08235294118" green="0.65098039220000004" blue="0.3411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="aJ7-WK-gNV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SegoeUI-Semibold" family="Segoe UI" pointSize="17"/>
+                                <state key="normal" title="SELECT MONTHLY">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Starts 30 Days after your Free Trial" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fVS-bc-Mgg">
+                                <rect key="frame" x="8" y="53.5" width="266" height="21.5"/>
+                                <fontDescription key="fontDescription" name="SegoeUI-Semibold" family="Segoe UI" pointSize="16"/>
+                                <color key="textColor" red="0.55294117649999996" green="0.58823529409999997" blue="0.62352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IsW-hn-ntU">
+                                <rect key="frame" x="-16" y="139.5" width="314" height="1"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="qyF-Ef-eVq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fVS-bc-Mgg" firstAttribute="leading" secondItem="Aiq-Fb-pN8" secondAttribute="leading" id="0cO-sZ-idb"/>
+                            <constraint firstItem="fVS-bc-Mgg" firstAttribute="trailing" secondItem="4pg-Mz-ywy" secondAttribute="trailing" id="3Ts-4Q-tai"/>
+                            <constraint firstItem="4pg-Mz-ywy" firstAttribute="top" secondItem="b3M-2O-B2P" secondAttribute="top" constant="8" id="86r-Xg-7ea"/>
+                            <constraint firstItem="Aiq-Fb-pN8" firstAttribute="leading" secondItem="b3M-2O-B2P" secondAttribute="leading" constant="8" id="9dd-YI-q3w"/>
+                            <constraint firstItem="KdS-G2-O9b" firstAttribute="trailing" secondItem="fVS-bc-Mgg" secondAttribute="trailing" id="IBQ-Ni-WbU"/>
+                            <constraint firstAttribute="bottom" secondItem="IsW-hn-ntU" secondAttribute="bottom" constant="8" id="Lyq-Ne-vup"/>
+                            <constraint firstItem="Aiq-Fb-pN8" firstAttribute="top" secondItem="b3M-2O-B2P" secondAttribute="top" constant="8" id="Tu6-oY-Zch"/>
+                            <constraint firstItem="IsW-hn-ntU" firstAttribute="top" secondItem="KdS-G2-O9b" secondAttribute="bottom" constant="9.5" id="WfU-On-OP2"/>
+                            <constraint firstAttribute="trailing" secondItem="4pg-Mz-ywy" secondAttribute="trailing" constant="8" id="bio-Na-bwC"/>
+                            <constraint firstItem="KdS-G2-O9b" firstAttribute="leading" secondItem="fVS-bc-Mgg" secondAttribute="leading" id="fZ2-Zb-Uga"/>
+                            <constraint firstItem="fVS-bc-Mgg" firstAttribute="top" secondItem="Aiq-Fb-pN8" secondAttribute="bottom" constant="20" id="g2b-M7-FHR"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="b3M-2O-B2P" secondAttribute="trailing" constant="16" id="97B-Gb-RvI"/>
+                    <constraint firstAttribute="trailing" secondItem="IsW-hn-ntU" secondAttribute="trailing" id="CHn-Zq-g5P"/>
+                    <constraint firstItem="b3M-2O-B2P" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="KIo-AO-d72"/>
+                    <constraint firstItem="b3M-2O-B2P" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="aWJ-aj-Pbp"/>
+                    <constraint firstItem="IsW-hn-ntU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="k12-Jn-kZ2"/>
+                    <constraint firstAttribute="bottom" secondItem="b3M-2O-B2P" secondAttribute="bottom" id="wle-Ie-497"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="membershipPriceLbl" destination="4pg-Mz-ywy" id="yfS-aQ-zwg"/>
+                <outlet property="membershipTypeLbl" destination="Aiq-Fb-pN8" id="iz5-Dh-Pxx"/>
+                <outlet property="selectedBtn" destination="KdS-G2-O9b" id="9Pb-Mm-MtX"/>
+                <outlet property="separatorLineLbl" destination="IsW-hn-ntU" id="O9I-X7-PHh"/>
+            </connections>
+            <point key="canvasLocation" x="132.80000000000001" y="158.77061469265368"/>
+        </tableViewCell>
+    </objects>
+</document>

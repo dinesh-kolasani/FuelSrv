@@ -1,0 +1,6 @@
+framework module Pods_FuelSrv {
+  umbrella header "Pods-FuelSrv-umbrella.h"
+
+  export *
+  module * { export * }
+}
